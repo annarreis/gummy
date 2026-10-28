@@ -1,0 +1,27 @@
+Landing page Hair Vegan Gummies - Vita Premium
+================================================
+
+Conteúdo
+- index.html ........ a página (HTML, CSS e JavaScript em um único arquivo)
+- assets/product.jpg  foto do produto (topo da página)
+- assets/jar.jpg .... pote recortado (cards de kits)
+- assets/video.mp4 .. vídeo do produto, sem áudio
+- assets/poster.jpg . imagem exibida antes do vídeo carregar
+
+Como publicar
+Envie a pasta inteira para a hospedagem (Hostinger, Netlify, Vercel etc.)
+mantendo a pasta "assets" ao lado do index.html.
+Para testar no computador, basta abrir o index.html no navegador.
+
+Antes de colocar no ar, ajuste no index.html:
+1. Preços dos kits (R$ 89,90 / R$ 239,70 / R$ 349,50) e preços riscados: são exemplos.
+2. Links dos botões de compra: troque "#comprar-1", "#comprar-3" e "#comprar-5"
+   pelos links do checkout.
+3. Formas de pagamento (Pix, cartão em até 12x, boleto) e regra de frete grátis.
+4. Número de WhatsApp na seção "Dúvidas frequentes" (hoje só há o texto).
+5. Alegações de saúde sobre biotina, selênio e cromo: validar com as regras da ANVISA.
+6. Vídeo: entre os segundos 4 e 6 o close no rótulo mostra texto com erros
+   (gerado por IA). Vale substituir assets/video.mp4 por uma versão corrigida,
+   com o mesmo nome de arquivo.
+
+A página usa as fontes Fraunces e Figtree do Google Fonts (precisa de internet).

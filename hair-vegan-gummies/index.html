@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hair Vegan Gummies | Vita Premium</title>
+<meta name="description" content="Hair, a goma vegana da Vita Premium rica em biotina, com vitaminas, selênio e cromo. 60 gomas por pote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..800,100&family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: one blush hero that is the product photo's own backdrop, so the jar sits in the page instead of on a card.
+   Below it, cream sections with a berry ink; gummy red is reserved for the floating bears and small highlights. */
+:root {
+  --blush: #EDA2B2;
+  --blush-soft: #F7D3DB;
+  --cream: #FFF6F7;
+  --white: #FFFFFF;
+  --berry: #5B1631;
+  --berry-muted: #8A4A60;
+  --line: #EFC4CE;
+  --gummy: #F2463B;
+  --display: "Fraunces", "Georgia", "Times New Roman", serif;
+  --body: "Figtree", "Helvetica Neue", Arial, sans-serif;
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2.25rem, 5vw, 3.5rem);
+  --step-4: clamp(2.9rem, 7vw, 5.6rem);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --z-base: 1;
+  --z-bar: 20;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--cream); color: var(--berry);
+  font-family: var(--body); font-size: var(--step-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, video { max-width: 100%; display: block; }
+h1, h2, h3 { margin: 0; text-wrap: balance; font-family: var(--display); font-variation-settings: "SOFT" 100; font-weight: 600; line-height: 1.02; letter-spacing: -0.015em; }
+p { margin: 0; text-wrap: pretty; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--berry); outline-offset: 3px; border-radius: 6px; }
+
+.wrap {
+  max-width: 1180px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 720px) {
+  .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font: 700 var(--step-0)/1 var(--body); padding: 17px 28px; border-radius: 999px;
+  border: 2px solid transparent; text-decoration: none; cursor: pointer;
+  transition: transform 160ms var(--ease-out), background-color 160ms ease;
+}
+.btn:active { transform: scale(0.97); }
+.btn-berry { background: var(--berry); color: var(--cream); }
+.btn-line { background: transparent; color: var(--berry); border-color: color-mix(in srgb, var(--berry) 35%, transparent); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: scale(0.97); }
+  .btn-berry:hover { background: #4A1028; }
+}
+
+/* ---------- Hero ---------- */
+.hero { background: var(--blush); position: relative; overflow: hidden; }
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 20px; position: relative; z-index: 2; }
+.brand { text-decoration: none; display: grid; line-height: 0.9; }
+.brand b { font: 600 1.05rem/1 var(--body); letter-spacing: 0.02em; }
+.brand span { font: 700 1.6rem/1 var(--display); font-variation-settings: "SOFT" 100; }
+.nav-links { display: flex; align-items: center; gap: 26px; font-weight: 600; }
+.nav-links a { text-decoration: none; }
+.nav-links a:not(.btn):hover { text-decoration: underline; text-underline-offset: 4px; }
+.nav-links .btn { padding: 12px 20px; font-size: var(--step--1); }
+@media (max-width: 820px) { .nav-links a:not(.btn) { display: none; } }
+
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: center; padding-block: 8px 64px; position: relative; z-index: 2; }
+@media (max-width: 880px) { .hero-grid { grid-template-columns: minmax(0, 1fr); padding-block: 0 48px; } }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.chip { background: var(--cream); color: var(--berry); font-weight: 700; font-size: var(--step--1); padding: 7px 14px; border-radius: 999px; }
+.hero h1 { font-size: var(--step-4); }
+.hero h1 em { font-style: italic; font-weight: 500; }
+.hero .lede { font-size: var(--step-1); max-width: 34ch; margin-top: 22px; color: var(--berry); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.facts { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-top: 30px; padding: 0; list-style: none; font-weight: 600; font-size: 0.95rem; }
+.facts li { display: flex; align-items: center; gap: 8px; }
+.facts svg { width: 18px; height: 18px; flex: none; }
+
+.product { position: relative; display: grid; place-items: center; }
+.product img { width: min(560px, 100%); height: auto; aspect-ratio: 1; object-fit: cover; -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 62%, transparent 72%); mask-image: radial-gradient(circle at 50% 50%, #000 62%, transparent 72%); }
+.bear { position: absolute; width: var(--w, 64px); aspect-ratio: 100 / 120; z-index: 3; pointer-events: none; }
+.bear svg { width: 100%; height: 100%; display: block; animation: float var(--t, 6s) ease-in-out var(--delay, 0s) infinite; transform: rotate(var(--r, 0deg)); }
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-16px) rotate(calc(var(--r, 0deg) + 8deg)); }
+}
+.parallax { transition: transform 600ms var(--ease-out); }
+
+/* hero entrance */
+.intro { animation: fadeUp 800ms var(--ease-out) var(--d, 0ms) both; }
+.pop { animation: pop 1000ms var(--ease-out) 200ms both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } }
+@keyframes pop { from { opacity: 0; transform: translateY(30px) scale(0.96); } }
+
+/* ---------- Sections ---------- */
+section { padding-block: 96px; }
+@media (max-width: 720px) { section { padding-block: 64px; } }
+.head { display: grid; gap: 14px; max-width: 44rem; margin-bottom: 48px; }
+.head h2 { font-size: var(--step-3); }
+.head p { font-size: var(--step-1); color: var(--berry-muted); max-width: 42ch; }
+
+/* formula: element tiles */
+.formula { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 960px) { .formula { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .formula { grid-template-columns: minmax(0, 1fr); } }
+.tile { background: var(--white); border-radius: 24px; padding: 24px; display: grid; gap: 14px; align-content: start; border: 1px solid var(--line); }
+.tile.star { background: var(--berry); color: var(--cream); border-color: var(--berry); }
+.sym {
+  width: 76px; aspect-ratio: 1; border-radius: 16px; background: var(--blush-soft); color: var(--berry);
+  display: grid; place-items: center; position: relative;
+  font: 700 2rem/1 var(--display); font-variation-settings: "SOFT" 100;
+}
+.sym small { position: absolute; top: 7px; left: 9px; font: 700 0.62rem/1 var(--body); opacity: 0.7; }
+.tile.star .sym { background: var(--blush); }
+.tile h3 { font-size: 1.6rem; }
+.tile p { color: var(--berry-muted); font-size: 0.98rem; }
+.tile.star p { color: var(--blush-soft); }
+.tag { justify-self: start; font-size: 0.78rem; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: var(--blush); color: var(--berry); }
+
+/* video */
+.film { background: var(--berry); color: var(--cream); }
+.film .head p { color: var(--blush-soft); }
+.film-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px; align-items: center; }
+@media (max-width: 880px) { .film-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; } }
+.film-frame { border-radius: 28px; overflow: hidden; aspect-ratio: 16 / 9; background: var(--blush); max-width: 100%; position: relative; }
+.film-frame video { width: 100%; height: 100%; object-fit: cover; }
+.film-toggle {
+  position: absolute; right: 14px; bottom: 14px; width: 44px; height: 44px; border-radius: 50%; border: 0; cursor: pointer;
+  background: color-mix(in srgb, var(--berry) 72%, transparent); color: var(--cream); display: grid; place-items: center;
+}
+.film-toggle svg { width: 18px; height: 18px; fill: currentColor; }
+.why { list-style: none; padding: 0; margin: 0; display: grid; gap: 22px; }
+.why li { display: grid; gap: 4px; padding-left: 22px; border-left: 3px solid var(--blush); }
+.why b { font-size: 1.1rem; }
+.why span { color: var(--blush-soft); }
+
+/* steps */
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; list-style: none; padding: 0; margin: 0; counter-reset: s; }
+@media (max-width: 860px) { .steps { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+.steps li { counter-increment: s; display: grid; gap: 10px; align-content: start; }
+.steps li::before {
+  content: counter(s); width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--blush); font: 700 1.5rem/1 var(--display);
+}
+.steps h3 { font-size: 1.5rem; }
+.steps p { color: var(--berry-muted); max-width: 32ch; }
+
+/* kits */
+.kits { background: var(--blush-soft); }
+.kit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
+@media (max-width: 900px) { .kit-grid { grid-template-columns: minmax(0, 1fr); max-width: 460px; } }
+.kit { background: var(--white); border-radius: 28px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; border: 2px solid transparent; position: relative; }
+.kit.best { border-color: var(--berry); }
+.ribbon { position: absolute; top: 16px; left: 16px; z-index: 2; background: var(--berry); color: var(--cream); font-weight: 700; font-size: 0.8rem; padding: 6px 12px; border-radius: 999px; }
+.jars { background: var(--blush); height: 230px; display: flex; justify-content: center; align-items: flex-end; padding-top: 24px; overflow: hidden; }
+.jars img { height: 190px; width: auto; margin-inline: -26px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent); mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent); transition: transform 300ms var(--ease-out); filter: drop-shadow(0 10px 12px rgba(91, 22, 49, 0.18)); }
+.jars img:nth-child(odd):not(:first-child) { height: 170px; }
+@media (hover: hover) and (pointer: fine) { .kit:hover .jars img { transform: translateY(-8px); } .kit:hover .jars img:nth-child(2) { transition-delay: 40ms; } .kit:hover .jars img:nth-child(3) { transition-delay: 80ms; } }
+.kit-body { padding: 24px; display: grid; gap: 14px; align-content: start; font-variant-numeric: tabular-nums; }
+.kit h3 { font-size: 1.7rem; }
+.kit .sub { color: var(--berry-muted); font-size: 0.95rem; }
+.price { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.price strong { font: 700 2.6rem/1 var(--display); font-variation-settings: "SOFT" 100; }
+.price s { color: var(--berry-muted); }
+.each { font-weight: 600; }
+.save { justify-self: start; background: var(--blush-soft); font-weight: 700; font-size: 0.85rem; padding: 5px 10px; border-radius: 8px; }
+.kit ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-size: 0.95rem; }
+.kit li { display: flex; gap: 8px; }
+.kit li svg { width: 18px; height: 18px; flex: none; margin-top: 3px; }
+.kit .btn { width: 100%; margin-top: 6px; }
+
+/* trust */
+.trust { padding-block: 56px; border-bottom: 1px solid var(--line); }
+.trust-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+@media (max-width: 760px) { .trust-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
+.trust-item { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px; align-items: start; }
+.trust-item .ic { width: 48px; height: 48px; border-radius: 14px; background: var(--blush-soft); display: grid; place-items: center; }
+.trust-item svg { width: 24px; height: 24px; }
+.trust-item b { display: block; }
+.trust-item span { color: var(--berry-muted); font-size: 0.95rem; }
+
+/* faq */
+.faq-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; }
+@media (max-width: 880px) { .faq-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; } }
+details { border-bottom: 1px solid var(--line); }
+details:first-of-type { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 20px; font-weight: 700; font-size: 1.1rem; }
+summary::-webkit-details-marker { display: none; }
+.plus { flex: none; width: 22px; height: 22px; position: relative; }
+.plus::before, .plus::after { content: ""; position: absolute; inset: 10px 2px auto; height: 2px; background: currentColor; transition: transform 200ms var(--ease-out); }
+.plus::after { transform: rotate(90deg); }
+details[open] .plus::after { transform: rotate(0deg); }
+.answer { padding-bottom: 22px; color: var(--berry-muted); max-width: 62ch; }
+details[open] .answer { animation: fadeDown 240ms var(--ease-out); }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-6px); } }
+
+/* final */
+.final { background: var(--blush); text-align: center; position: relative; overflow: hidden; }
+.final .wrap { display: grid; justify-items: center; gap: 22px; position: relative; z-index: 2; }
+.final h2 { font-size: var(--step-4); max-width: 14ch; }
+.final p { font-size: var(--step-1); max-width: 40ch; }
+
+footer { padding-block: 40px 120px; font-size: var(--step--1); color: var(--berry-muted); }
+@media (min-width: 761px) { footer { padding-bottom: 40px; } }
+.foot-grid { display: grid; gap: 14px; max-width: 72ch; }
+.foot-grid strong { color: var(--berry); }
+
+/* mobile buy bar */
+.buybar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--z-bar);
+  background: var(--white); border-top: 1px solid var(--line);
+  padding-block: 12px calc(12px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  transform: translateY(110%); transition: transform 300ms var(--ease-out);
+}
+.buybar.show { transform: none; }
+.buybar b { display: block; font-size: 1rem; }
+.buybar span { font-size: 0.85rem; color: var(--berry-muted); }
+.buybar .btn { padding: 13px 20px; flex: none; }
+@media (min-width: 761px) { .buybar { display: none; } }
+
+/* ---------- Motion ---------- */
+/* headline: words rise out of a mask, then "mais gostosa" squishes like a gummy */
+.word { display: inline-block; overflow: hidden; vertical-align: top; padding: 0 0.08em 0.1em 0; margin: 0 -0.08em -0.1em 0; }
+.word > span { display: inline-block; animation: rise 800ms var(--ease-out) var(--d, 0ms) both; }
+@keyframes rise { from { transform: translateY(110%); } }
+.jelly { display: inline-block; transform-origin: 50% 90%; animation: jelly 1000ms var(--ease-out) 1050ms both; }
+@keyframes jelly {
+  0%, 100% { transform: scale(1, 1); }
+  18% { transform: scale(1.1, 0.88); }
+  38% { transform: scale(0.94, 1.08); }
+  58% { transform: scale(1.04, 0.97); }
+  78% { transform: scale(0.99, 1.01); }
+}
+/* the jar floats and leans with the cursor */
+.jar-wrap { display: grid; place-items: center; width: 100%; }
+.jar-wrap img { animation: bob 5s ease-in-out 1.2s infinite; }
+@keyframes bob { 50% { transform: translateY(-12px); } }
+
+/* benefits ticker */
+.ticker { background: var(--berry); color: var(--cream); overflow: hidden; }
+.ticker-track { display: flex; width: max-content; animation: marquee 32s linear infinite; }
+.ticker-group { display: flex; align-items: center; gap: 26px; padding-right: 26px; padding-block: 14px; white-space: nowrap;
+  font: italic 500 1.35rem/1 var(--display); font-variation-settings: "SOFT" 100; }
+.ticker-group svg { width: 20px; height: 24px; flex: none; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* scroll reveals: added by script only to blocks that start below the fold */
+[data-reveal] .tile, [data-reveal] .kit, [data-reveal] .why li, [data-reveal] .steps li > * {
+  transition: opacity 650ms var(--ease-out) var(--d, 0ms), transform 650ms var(--ease-out) var(--d, 0ms);
+}
+.tile:nth-child(2), .kit:nth-child(2), .why li:nth-child(2) { --d: 90ms; }
+.tile:nth-child(3), .kit:nth-child(3), .why li:nth-child(3) { --d: 180ms; }
+.tile:nth-child(4) { --d: 270ms; }
+.steps li:nth-child(2) { --d: 160ms; }
+.steps li:nth-child(3) { --d: 320ms; }
+.is-pre .tile, .is-pre .kit { opacity: 0; transform: translateY(28px); }
+.is-pre .why li { opacity: 0; transform: translateX(-18px); }
+.is-pre .steps li > * { opacity: 0; transform: translateY(12px); }
+[data-reveal] .steps li::before { transition: transform 550ms cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), opacity 300ms ease-out var(--d, 0ms); }
+.is-pre .steps li::before { transform: scale(0.3); opacity: 0; }
+[data-reveal] .film-frame { transition: opacity 800ms var(--ease-out), transform 800ms var(--ease-out); }
+.is-pre .film-frame { opacity: 0; transform: scale(0.94); }
+/* jars rise into each kit card, one after another */
+.jars img:nth-child(2) { --j: 90ms; }
+.jars img:nth-child(3) { --j: 180ms; }
+.is-pre .jars img { opacity: 0; }
+.is-in .jars img { animation: jarUp 800ms var(--ease-out) calc(var(--d, 0ms) + var(--j, 0ms) + 200ms) backwards; }
+@keyframes jarUp { from { opacity: 0; transform: translateY(70%); } }
+
+/* element tiles wobble on hover */
+@media (hover: hover) and (pointer: fine) {
+  .tile:hover .sym { animation: jelly 700ms var(--ease-out); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word > span, .jelly, .jar-wrap img, .ticker-track { animation: none; }
+  .tile:hover .sym { animation: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bear svg { animation: none; }
+  .intro, .pop { animation-name: fadeIn; }
+  details[open] .answer { animation-name: fadeIn; }
+  .parallax, .jars img, .buybar { transition: none; }
+}
+@keyframes fadeIn { from { opacity: 0; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="gum" cx="38%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#FF8A76"/>
+      <stop offset="0.55" stop-color="#F2463B"/>
+      <stop offset="1" stop-color="#C8241E"/>
+    </radialGradient>
+  </defs>
+  <symbol id="bear" viewBox="0 0 100 120">
+    <g fill="url(#gum)">
+      <circle cx="27" cy="16" r="11"/><circle cx="73" cy="16" r="11"/>
+      <circle cx="50" cy="34" r="25"/>
+      <ellipse cx="22" cy="64" rx="10" ry="14" transform="rotate(-28 22 64)"/>
+      <ellipse cx="78" cy="64" rx="10" ry="14" transform="rotate(28 78 64)"/>
+      <ellipse cx="50" cy="80" rx="27" ry="29"/>
+      <circle cx="31" cy="106" r="13"/><circle cx="69" cy="106" r="13"/>
+    </g>
+    <ellipse cx="50" cy="42" rx="9" ry="7" fill="#FF7B6B"/>
+    <ellipse cx="38" cy="24" rx="8" ry="5" fill="#fff" opacity=".4" transform="rotate(-25 38 24)"/>
+    <ellipse cx="38" cy="70" rx="6" ry="10" fill="#fff" opacity=".28" transform="rotate(-15 38 70)"/>
+  </symbol>
+  <symbol id="check" viewBox="0 0 18 18"><path d="M3 9.5 7 13l8-8.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15m-1-1 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#topo"><b>vita</b><span>premium</span></a>
+      <div class="nav-links">
+        <a href="#formula">Fórmula</a>
+        <a href="#como-usar">Como usar</a>
+        <a href="#kits">Kits</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn-berry" href="#kits">Comprar agora</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <div class="chips intro" style="--d:0ms"><span class="chip">Vegan Gummies</span><span class="chip">Rico em biotina</span></div>
+        <h1><span class="word"><span style="--d:60ms">Seu</span></span> <span class="word"><span style="--d:120ms">cabelo</span></span> <span class="word"><span style="--d:180ms">merece</span></span> <span class="word"><span style="--d:240ms">uma</span></span> <span class="word"><span style="--d:300ms">rotina</span></span> <span class="jelly"><span class="word"><span style="--d:380ms"><em>mais</em></span></span> <span class="word"><span style="--d:440ms"><em>gostosa</em>.</span></span></span></h1>
+        <p class="lede intro" style="--d:520ms">Hair é a goma vegana da Vita Premium, rica em biotina e com vitaminas, selênio e cromo. É só mastigar: sem cápsula, sem água e com um sabor que dá vontade de não pular nenhum dia.</p>
+        <div class="hero-actions intro" style="--d:620ms">
+          <a class="btn btn-berry" href="#kits">Quero meu Hair</a>
+          <a class="btn btn-line" href="#formula">Ver a fórmula</a>
+        </div>
+        <ul class="facts intro" style="--d:700ms">
+          <li><svg><use href="#leaf"/></svg>100% vegano</li>
+          <li><svg><use href="#check"/></svg>60 gomas por pote</li>
+          <li><svg><use href="#check"/></svg>Sem gelatina animal</li>
+        </ul>
+      </div>
+
+      <div class="product pop">
+        <div class="parallax jar-wrap" data-depth="-8"><img src="assets/product.jpg" alt="Pote de Hair Vegan Gummies da Vita Premium com 60 gomas em formato de ursinho" width="997" height="997"></div>
+        <div class="parallax" data-depth="18" style="position:absolute;inset:0">
+          <span class="bear" style="--w:58px;top:6%;left:10%;--r:-18deg;--t:6.5s"><svg><use href="#bear"/></svg></span>
+          <span class="bear" style="--w:44px;bottom:10%;right:6%;--r:22deg;--t:5.5s;--delay:-2s"><svg><use href="#bear"/></svg></span>
+        </div>
+        <div class="parallax" data-depth="-12" style="position:absolute;inset:0">
+          <span class="bear" style="--w:36px;top:14%;right:12%;--r:14deg;--t:7s;--delay:-1s"><svg><use href="#bear"/></svg></span>
+          <span class="bear" style="--w:30px;bottom:18%;left:4%;--r:-30deg;--t:6s;--delay:-3s"><svg><use href="#bear"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tickerTrack"><div class="ticker-group"><span>100% vegano</span><svg><use href="#bear"/></svg><span>Rico em biotina</span><svg><use href="#bear"/></svg><span>Com selênio e cromo</span><svg><use href="#bear"/></svg><span>60 gomas por pote</span><svg><use href="#bear"/></svg><span>Sem gelatina animal</span><svg><use href="#bear"/></svg><span>Sem cápsula, sem água</span><svg><use href="#bear"/></svg></div><div class="ticker-group"><span>100% vegano</span><svg><use href="#bear"/></svg><span>Rico em biotina</span><svg><use href="#bear"/></svg><span>Com selênio e cromo</span><svg><use href="#bear"/></svg><span>60 gomas por pote</span><svg><use href="#bear"/></svg><span>Sem gelatina animal</span><svg><use href="#bear"/></svg><span>Sem cápsula, sem água</span><svg><use href="#bear"/></svg></div></div></div>
+
+<main>
+  <section id="formula">
+    <div class="wrap">
+      <div class="head">
+        <h2>O que tem em cada goma</h2>
+        <p>Uma fórmula curta, com a biotina como protagonista.</p>
+      </div>
+      <div class="formula" data-reveal>
+        <article class="tile star">
+          <div class="sym"><small>B7</small>Bi</div>
+          <span class="tag">Destaque da fórmula</span>
+          <h3>Biotina</h3>
+          <p>A vitamina B7 é a mais lembrada quando o assunto é cabelo. Ela auxilia no metabolismo energético do organismo.</p>
+        </article>
+        <article class="tile">
+          <div class="sym"><small>A–Z</small>Vit</div>
+          <h3>Vitaminas</h3>
+          <p>Um mix de vitaminas para complementar a alimentação do dia a dia, sem precisar de vários potes.</p>
+        </article>
+        <article class="tile">
+          <div class="sym"><small>34</small>Se</div>
+          <h3>Selênio</h3>
+          <p>Mineral que auxilia na proteção dos danos causados pelos radicais livres.</p>
+        </article>
+        <article class="tile">
+          <div class="sym"><small>24</small>Cr</div>
+          <h3>Cromo</h3>
+          <p>Mineral que participa do metabolismo dos carboidratos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="film">
+    <div class="wrap film-grid" data-reveal>
+      <div>
+        <div class="head" style="margin-bottom:28px">
+          <h2>Por que em goma?</h2>
+          <p>Porque o melhor suplemento é aquele que você lembra de tomar.</p>
+        </div>
+        <ul class="why">
+          <li><b>Vira um momento bom do dia</b><span>Mastigar um ursinho é bem mais fácil de manter do que engolir uma cápsula.</span></li>
+          <li><b>Vai com você para qualquer lugar</b><span>Não precisa de água. Cabe na bolsa, na gaveta do trabalho, na mala.</span></li>
+          <li><b>Vegano de verdade</b><span>Sem gelatina de origem animal, para quem tem uma rotina livre de ingredientes animais.</span></li>
+        </ul>
+      </div>
+      <div class="film-frame">
+        <video id="film" src="assets/video.mp4" poster="assets/poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Vídeo do pote de Hair com ursinhos de goma flutuando"></video>
+        <button class="film-toggle" id="filmToggle" type="button" aria-label="Pausar vídeo">
+          <svg viewBox="0 0 18 18" id="filmIcon"><rect x="3" y="2" width="4" height="14" rx="1"/><rect x="11" y="2" width="4" height="14" rx="1"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-usar">
+    <div class="wrap">
+      <div class="head">
+        <h2>Como usar</h2>
+        <p>Três passos para o Hair entrar de vez na sua rotina.</p>
+      </div>
+      <ol class="steps" data-reveal>
+        <li><h3>Mastigue a porção do dia</h3><p>Consuma a quantidade indicada no rótulo, de preferência sempre no mesmo horário.</p></li>
+        <li><h3>Deixe o pote à vista</h3><p>Perto da escova de dentes, na mesa do café ou na bolsa. Lembrar é metade do caminho.</p></li>
+        <li><h3>Mantenha a constância</h3><p>Suplemento funciona como hábito. Use todos os dias, junto de uma alimentação equilibrada.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="kits" class="kits">
+    <div class="wrap">
+      <div class="head">
+        <h2>Escolha seu kit</h2>
+        <p>Quanto mais potes, menor o preço de cada um. Frete grátis nos kits de 3 e 5.</p>
+      </div>
+      <div class="kit-grid" data-reveal>
+        <article class="kit">
+          <div class="jars"><img src="assets/jar.jpg" alt="" width="236" height="480"></div>
+          <div class="kit-body">
+            <h3>1 pote</h3>
+            <p class="sub">Para experimentar</p>
+            <div class="price"><strong>R$ 89,90</strong></div>
+            <span class="each">60 gomas</span>
+            <ul><li><svg><use href="#check"/></svg>Envio para todo o Brasil</li></ul>
+            <a class="btn btn-line" href="#comprar-1">Comprar 1 pote</a>
+          </div>
+        </article>
+        <article class="kit best">
+          <span class="ribbon">Mais escolhido</span>
+          <div class="jars"><img src="assets/jar.jpg" alt="" width="236" height="480"><img src="assets/jar.jpg" alt="" width="236" height="480"><img src="assets/jar.jpg" alt="" width="236" height="480"></div>
+          <div class="kit-body">
+            <h3>3 potes</h3>
+            <p class="sub">Para criar o hábito</p>
+            <div class="price"><strong>R$ 239,70</strong><s>R$ 269,70</s></div>
+            <span class="each">R$ 79,90 cada pote</span>
+            <span class="save">Economize R$ 30,00</span>
+            <ul><li><svg><use href="#check"/></svg>Frete grátis</li><li><svg><use href="#check"/></svg>180 gomas no total</li></ul>
+            <a class="btn btn-berry" href="#comprar-3">Comprar 3 potes</a>
+          </div>
+        </article>
+        <article class="kit">
+          <span class="ribbon">Melhor preço</span>
+          <div class="jars"><img src="assets/jar.jpg" alt="" width="236" height="480"><img src="assets/jar.jpg" alt="" width="236" height="480"><img src="assets/jar.jpg" alt="" width="236" height="480"></div>
+          <div class="kit-body">
+            <h3>5 potes</h3>
+            <p class="sub">Para quem já é fã</p>
+            <div class="price"><strong>R$ 349,50</strong><s>R$ 449,50</s></div>
+            <span class="each">R$ 69,90 cada pote</span>
+            <span class="save">Economize R$ 100,00</span>
+            <ul><li><svg><use href="#check"/></svg>Frete grátis</li><li><svg><use href="#check"/></svg>300 gomas no total</li></ul>
+            <a class="btn btn-line" href="#comprar-5">Comprar 5 potes</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><div><b>Pagamento protegido</b><span>Pix, cartão em até 12x ou boleto.</span></div></div>
+      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div><div><b>7 dias para desistir</b><span>Direito de arrependimento garantido pelo Código de Defesa do Consumidor.</span></div></div>
+      <div class="trust-item"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><div><b>Envio para todo o Brasil</b><span>Prazo e frete calculados pelo CEP no checkout.</span></div></div>
+    </div>
+  </div>
+
+  <section id="duvidas">
+    <div class="wrap faq-grid">
+      <div class="head">
+        <h2>Dúvidas frequentes</h2>
+        <p>Não encontrou o que procurava? Fale com a gente pelo WhatsApp.</p>
+      </div>
+      <div>
+        <details><summary>O Hair é vegano?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Sim. As gomas não levam gelatina nem outros ingredientes de origem animal.</p></details>
+        <details><summary>Quantas gomas devo comer por dia?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Siga a recomendação de consumo indicada na embalagem. Não exceda a porção diária.</p></details>
+        <details><summary>Quanto tempo dura um pote?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Cada pote tem 60 gomas (240 g). A duração depende da porção diária indicada no rótulo.</p></details>
+        <details><summary>Em quanto tempo vejo resultado?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Cada organismo responde de um jeito. Suplementos fazem parte de uma rotina de cuidados e não substituem uma alimentação equilibrada nem o acompanhamento de um profissional.</p></details>
+        <details><summary>Homens também podem tomar?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Sim, o Hair pode fazer parte da rotina de adultos de qualquer gênero.</p></details>
+        <details><summary>Gestantes e lactantes podem consumir?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Gestantes, lactantes, crianças e pessoas com alguma condição de saúde devem consultar um médico ou nutricionista antes de consumir qualquer suplemento.</p></details>
+        <details><summary>Posso devolver se não gostar?<span class="plus" aria-hidden="true"></span></summary><p class="answer">Sim. Compras on-line podem ser canceladas em até 7 dias após o recebimento, conforme o artigo 49 do Código de Defesa do Consumidor.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="parallax" data-depth="14" style="position:absolute;inset:0" aria-hidden="true">
+      <span class="bear" style="--w:70px;top:16%;left:8%;--r:-20deg;--t:6.5s"><svg><use href="#bear"/></svg></span>
+      <span class="bear" style="--w:52px;bottom:14%;right:9%;--r:18deg;--t:5.8s;--delay:-2s"><svg><use href="#bear"/></svg></span>
+      <span class="bear" style="--w:34px;top:22%;right:20%;--r:30deg;--t:7s;--delay:-1s"><svg><use href="#bear"/></svg></span>
+    </div>
+    <div class="wrap">
+      <h2>Comece hoje a sua rotina Hair</h2>
+      <p>60 gomas veganas, ricas em biotina, a partir de R$ 69,90 por pote.</p>
+      <a class="btn btn-berry" href="#kits">Escolher meu kit</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p><strong>Hair Vegan Gummies, Vita Premium Nutrition.</strong> Suplemento alimentar em pastilhas de goma com vitaminas, selênio e cromo. Colorido e aromatizado artificialmente. 60 unidades, peso líquido 240 g.</p>
+    <p>Este produto não é um medicamento. Não exceder a recomendação diária de consumo indicada na embalagem. Mantenha fora do alcance de crianças. Imagens meramente ilustrativas.</p>
+  </div>
+</footer>
+
+<div class="buybar" id="buybar" aria-hidden="true">
+  <div><b>Hair Vegan Gummies</b><span>A partir de R$ 69,90 o pote</span></div>
+  <a class="btn btn-berry" href="#kits" tabindex="-1">Comprar</a>
+</div>
+
+<script>
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // bears drift against the cursor in the hero and the final block (desktop pointers only)
+  if (!reduce && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.querySelectorAll(".hero, .final").forEach(function (zone) {
+      var layers = zone.querySelectorAll(".parallax");
+      zone.addEventListener("pointermove", function (e) {
+        var r = zone.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        layers.forEach(function (l) {
+          var d = Number(l.dataset.depth);
+          l.style.transform = "translate(" + (x * d).toFixed(1) + "px," + (y * d).toFixed(1) + "px)";
+        });
+      });
+      zone.addEventListener("pointerleave", function () { layers.forEach(function (l) { l.style.transform = ""; }); });
+    });
+  }
+
+  // video: pause control, honor reduced motion, and stop when off-screen
+  var film = document.getElementById("film");
+  var toggle = document.getElementById("filmToggle");
+  var icon = document.getElementById("filmIcon");
+  var userPaused = reduce;
+  var PAUSE = '<rect x="3" y="2" width="4" height="14" rx="1"/><rect x="11" y="2" width="4" height="14" rx="1"/>';
+  var PLAY = '<path d="M4 2.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L5.5 1.6A1 1 0 0 0 4 2.5Z"/>';
+  function paint() {
+    icon.innerHTML = film.paused ? PLAY : PAUSE;
+    toggle.setAttribute("aria-label", film.paused ? "Reproduzir vídeo" : "Pausar vídeo");
+  }
+  if (reduce) { film.removeAttribute("autoplay"); film.pause(); }
+  film.addEventListener("play", paint);
+  film.addEventListener("pause", paint);
+  toggle.addEventListener("click", function () {
+    if (film.paused) { userPaused = false; film.play().catch(function () {}); }
+    else { userPaused = true; film.pause(); }
+  });
+  paint();
+
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { if (!userPaused) film.play().catch(function () {}); }
+      else film.pause();
+    }, { threshold: 0.25 }).observe(film);
+
+    // mobile buy bar appears once the hero is out of view, hides again at the kits
+    var bar = document.getElementById("buybar");
+    var heroOut = false, kitsIn = false;
+    function sync() { bar.classList.toggle("show", heroOut && !kitsIn); }
+    new IntersectionObserver(function (e) { heroOut = !e[0].isIntersecting; sync(); }).observe(document.querySelector(".hero"));
+    new IntersectionObserver(function (e) { kitsIn = e[0].isIntersecting; sync(); }).observe(document.getElementById("kits"));
+
+    // pause the ticker when it is off-screen
+    var ticker = document.getElementById("tickerTrack");
+    new IntersectionObserver(function (e) {
+      ticker.style.animationPlayState = e[0].isIntersecting ? "running" : "paused";
+    }).observe(ticker);
+  }
+
+  // scroll reveals, only for blocks that start below the fold, so the page is complete at rest
+  if (!reduce && "IntersectionObserver" in window) {
+    var revealer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.remove("is-pre");
+        e.target.classList.add("is-in");
+        revealer.unobserve(e.target);
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll("[data-reveal]").forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) return;
+      el.classList.add("is-pre");
+      revealer.observe(el);
+    });
+  }
+
+  // a handful of gummy bears pops out of every buy button
+  function burst(x, y) {
+    for (var i = 0; i < 11; i++) {
+      var size = 18 + Math.random() * 18;
+      var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      s.setAttribute("viewBox", "0 0 100 120");
+      s.setAttribute("aria-hidden", "true");
+      s.innerHTML = '<use href="#bear"/>';
+      s.style.cssText = "position:fixed;pointer-events:none;z-index:30;left:" + x + "px;top:" + y + "px;width:" + size +
+        "px;height:" + size * 1.2 + "px;margin:" + (-size * 0.6) + "px 0 0 " + (-size / 2) + "px";
+      document.body.appendChild(s);
+      var ang = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.4;
+      var dist = 70 + Math.random() * 90;
+      var dx = Math.cos(ang) * dist, dy = Math.sin(ang) * dist, rot = (Math.random() - 0.5) * 260;
+      var a = s.animate([
+        { transform: "translate(0,0) scale(0.4) rotate(0deg)", opacity: 1 },
+        { transform: "translate(" + dx + "px," + dy + "px) scale(1) rotate(" + rot / 2 + "deg)", opacity: 1, offset: 0.55 },
+        { transform: "translate(" + dx * 1.15 + "px," + (dy + 70) + "px) scale(0.9) rotate(" + rot + "deg)", opacity: 0 }
+      ], { duration: 900 + Math.random() * 300, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
+      a.onfinish = (function (el) { return function () { el.remove(); }; })(s);
+    }
+  }
+  if (!reduce && document.body.animate) {
+    document.querySelectorAll(".btn-berry, .kit .btn").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var r = b.getBoundingClientRect();
+        burst(r.left + r.width / 2, r.top + r.height / 2);
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
